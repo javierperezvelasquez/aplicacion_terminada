@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Personal drive</string>
+    <string name="txv1">¿Desea Agregar a algún cliente? </string>
+    <string name="btnAgregar">Agregar cliente</string>
+    <string name="txv2">Información del cliente</string>
+    <string name="txt_rut">Rut</string>
+    <string name="txt_nombres">Nombre de la persona</string>
+    <string name="txt_apoderado">Nombre del apoderado</string>
+    <string name="txt_direccion">Dirección</string>
+    <string name="txt_numtel">Número de telefono</string>
+    <string name="txt_precio">Precio</string>
+    <string name="BotonRegistrar">Registrar Persona</string>
+    <string name="BotonBuscar">Buscar Persona</string>
+    <string name="BotonEliminar">Eliminar Persona</string>
+    <string name="BotonModificar">Modificar Persona</string>
+
+    <string name="btnvolver">Volver</string>
+</resources>
