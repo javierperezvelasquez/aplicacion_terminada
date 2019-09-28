@@ -10,8 +10,8 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="402dp"
-        android:layout_height="474dp"
+        android:layout_width="406dp"
+        android:layout_height="379dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,96 +25,120 @@
             android:fontFamily="cursive"
             android:text="@string/txv2"
             android:textAlignment="center"
+            android:textColor="#FFC107"
             android:textSize="36sp" />
 
-        <EditText
-            android:id="@+id/txt_rut"
-            android:layout_width="231dp"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="@string/txt_rut"
-            android:inputType="textPersonName"
-            android:textColor="#FFEB3B" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-        <EditText
-            android:id="@+id/txt_nombres"
-            android:layout_width="223dp"
-            android:layout_height="39dp"
-            android:ems="10"
-            android:hint="@string/txt_nombres"
-            android:inputType="textPersonName"
-            android:textColor="#FFEB3B" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
 
-        <EditText
-            android:id="@+id/txt_direccion"
-            android:layout_width="326dp"
-            android:layout_height="46dp"
-            android:ems="10"
-            android:hint="@string/txt_direccion"
-            android:inputType="textPersonName"
-            android:textColor="#FFEB3B" />
+                <EditText
+                    android:id="@+id/txt_rut"
+                    android:layout_width="231dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/txt_rut"
+                    android:inputType="textPersonName"
+                    android:textColor="#FFEB3B"
+                    android:textColorHint="#131210" />
 
-        <EditText
-            android:id="@+id/txt_numtel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="@string/txt_numtel"
-            android:inputType="phone"
-            android:textColor="#FFEB3B" />
+                <EditText
+                    android:id="@+id/txt_nombres"
+                    android:layout_width="223dp"
+                    android:layout_height="39dp"
+                    android:ems="10"
+                    android:hint="@string/txt_nombres"
+                    android:inputType="textPersonName"
+                    android:textColor="#FFEB3B"
+                    android:textColorHint="#0A0A09" />
 
-        <EditText
-            android:id="@+id/txt_apoderado"
-            android:layout_width="239dp"
-            android:layout_height="45dp"
-            android:ems="10"
-            android:hint="@string/txt_apoderado"
-            android:inputType="textPersonName"
-            android:textColor="#FFEB3B" />
+                <EditText
+                    android:id="@+id/txt_direccion"
+                    android:layout_width="326dp"
+                    android:layout_height="46dp"
+                    android:ems="10"
+                    android:hint="@string/txt_direccion"
+                    android:inputType="textPersonName"
+                    android:textColor="#FFEB3B"
+                    android:textColorHint="#141413" />
 
-        <EditText
-            android:id="@+id/txt_precio"
-            android:layout_width="wrap_content"
-            android:layout_height="55dp"
-            android:layout_marginBottom="240dp"
-            android:ems="10"
-            android:hint="@string/txt_precio"
-            android:inputType="number"
-            android:textColor="#FFEB3B" />
+                <EditText
+                    android:id="@+id/txt_numtel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/txt_numtel"
+                    android:inputType="phone"
+                    android:textColor="#FFEB3B"
+                    android:textColorHint="#161615" />
+
+                <EditText
+                    android:id="@+id/txt_apoderado"
+                    android:layout_width="239dp"
+                    android:layout_height="45dp"
+                    android:ems="10"
+                    android:hint="@string/txt_apoderado"
+                    android:inputType="textPersonName"
+                    android:textColor="#FFEB3B"
+                    android:textColorHint="#141413" />
+
+                <EditText
+                    android:id="@+id/txt_precio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:layout_marginBottom="240dp"
+                    android:ems="10"
+                    android:hint="@string/txt_precio"
+                    android:inputType="number"
+                    android:textColor="#FFEB3B"
+                    android:textColorHint="#141413" />
+
+            </LinearLayout>
+        </ScrollView>
+
     </LinearLayout>
-
 
 
     <Button
         android:id="@+id/button3"
         android:layout_width="170dp"
         android:layout_height="38dp"
+        android:layout_marginBottom="120dp"
+        android:drawableLeft="@android:drawable/ic_menu_add"
         android:onClick="Registrar"
         android:text="@string/BotonRegistrar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.766"
+        app:layout_constraintHorizontal_bias="0.045"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.711" />
+        app:layout_constraintVertical_bias="0.888" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="154dp"
         android:layout_height="40dp"
+        android:layout_marginBottom="120dp"
+        android:drawableLeft="@android:drawable/ic_search_category_default"
         android:onClick="Buscar"
         android:text="@string/BotonBuscar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.056"
+        app:layout_constraintHorizontal_bias="0.747"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.713" />
+        app:layout_constraintVertical_bias="0.888" />
 
     <Button
         android:id="@+id/button6"
         android:layout_width="167dp"
         android:layout_height="39dp"
+        android:drawableLeft="@android:drawable/ic_menu_edit"
         android:onClick="Modificar"
         android:text="@string/BotonModificar"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -128,6 +152,7 @@
         android:id="@+id/button5"
         android:layout_width="161dp"
         android:layout_height="37dp"
+        android:drawableLeft="@android:drawable/ic_menu_delete"
         android:onClick="Eliminar"
         android:text="@string/BotonEliminar"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -143,6 +168,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="104dp"
         android:layout_marginBottom="10dp"
+        android:drawableLeft="@android:drawable/ic_menu_revert"
         android:onClick="Volver"
         android:text="@string/btnvolver"
         app:layout_constraintBottom_toBottomOf="parent"
