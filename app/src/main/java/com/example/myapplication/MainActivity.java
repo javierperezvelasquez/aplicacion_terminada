@@ -21,7 +21,7 @@ import java.io.InputStream;
 public class MainActivity extends AppCompatActivity {
     ImageView img;
     Bitmap bitmap;
-    String URLIMAGE = "https://autolab.com.co/wp-content/uploads/2019/02/Iconos-Atributos_Mesa-de-trabajo-1-copia-4.png";
+    String URLimg = "https://autolab.com.co/wp-content/uploads/2019/02/Iconos-Atributos_Mesa-de-trabajo-1-copia-4.png";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         img = (ImageView) findViewById(R.id.imageView);
 
-        new GetImageFromURL(img).execute(URLIMAGE);
+        new GetImageFromURL(img).execute(URLimg);
 
 
     }
@@ -41,10 +41,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
         public class GetImageFromURL extends AsyncTask<String, Void, Bitmap> {
-        ImageView imgV;
+        ImageView imgVie;
 
         public GetImageFromURL(ImageView imgV) {
-            this.imgV = imgV;
+            this.imgVie = imgV;
         }
 
         @Override
@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         protected void onPostExecute(Bitmap bitmap) {
             super.onPostExecute(bitmap);
-            imgV.setImageBitmap(bitmap);
+            imgVie.setImageBitmap(bitmap);
 
 
             //Poner icono en el action bar
