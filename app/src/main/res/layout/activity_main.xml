@@ -47,5 +47,14 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"/>
 
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="126dp"
+        android:layout_height="89dp"
+        android:background="@android:drawable/ic_menu_mylocation"
+        android:onClick="Maps"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

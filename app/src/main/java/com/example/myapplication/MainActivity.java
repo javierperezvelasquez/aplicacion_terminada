@@ -40,6 +40,13 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    //metodo el boton acerca de
+    public void Maps(View view) {
+        Intent Maps = new Intent(this,MapsActivity .class);
+        startActivity(Maps);
+
+    }
+
         public class GetImageFromURL extends AsyncTask<String, Void, Bitmap> {
         ImageView imgVie;
 
