@@ -44,7 +44,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap = googleMap;
 
         //tipo de mapa
-        mMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
+        mMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
 
         //utilidades de google maps
         UiSettings USet =mMap.getUiSettings();
@@ -52,7 +52,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         // Add a marker in Sydney and move the camera
         LatLng chile= new LatLng(-30.604494, -71.2047422);
-        mMap.addMarker(new MarkerOptions().position(chile).title("Marcador de chile").
+        mMap.addMarker(new MarkerOptions().position(chile).title("Desarrollador de la aplicacion").
             icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN)));
         float zoomnivel = 16;
 
