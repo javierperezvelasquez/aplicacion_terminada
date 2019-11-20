@@ -107,7 +107,8 @@ public class ActivityAgregar extends AppCompatActivity {
 
     //Método para eliminar un persona
     public void Eliminar(View view) {
-        IngresoSQLite admin = new IngresoSQLite(this, "administracion", null, 1);
+        IngresoSQLite admin = new IngresoSQLite
+                (this, "administracion", null, 1);
         SQLiteDatabase BaseDatabase = admin.getWritableDatabase();
 
         String rut = et_rut.getText().toString();
@@ -171,13 +172,22 @@ public class ActivityAgregar extends AppCompatActivity {
         }
     }
 
+    //metodo el boton volver
+    public void Volver(View view) {
+        Intent volver = new Intent(this, MainActivity.class);
+        startActivity(volver);
 
-
+    }
 
     //metodo el boton volver
-        public void Volver(View view ){
-            Intent volver = new Intent( this,MainActivity.class);
-            startActivity(volver);
+    public void Limpiar(View view) {
+        et_rut.setText("");
+        et_nombre.setText("");
+        et_apoderado.setText("");
+        et_direccion.setText("");
+        et_telefono.setText("");
+        et_precio.setText("");
+    }
 
-        }
+
 }
