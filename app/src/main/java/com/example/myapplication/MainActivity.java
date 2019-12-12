@@ -39,6 +39,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(Agregarcliente);
 
     }
+    public void Comentario(View view){
+        Intent Comentario = new Intent(this,Fbcomentario.class);
+        startActivity(Comentario);
+    }
 
     //metodo el boton acerca de
     public void Maps(View view) {
