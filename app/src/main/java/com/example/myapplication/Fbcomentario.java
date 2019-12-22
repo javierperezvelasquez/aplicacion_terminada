@@ -53,6 +53,7 @@ public class Fbcomentario extends AppCompatActivity {
         String nombre = nom.getText().toString();
         String comentario = com.getText().toString();
 
+
         if (TextUtils.isEmpty(nombre)) {
             nom.setError("Rellene el campo nombre");
             nom.requestFocus();
